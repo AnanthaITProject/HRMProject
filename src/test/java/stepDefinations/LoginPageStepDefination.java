@@ -64,6 +64,8 @@ public class LoginPageStepDefination {
     @Then("^Validate confirmation \"([^\"]*)\" message$")
     public void validate_confirmation_something_message(String msg) throws Throwable {
         System.out.println(lp.getResetPasswordMsg());
+        System.out.println(msg);
+    	Assert.assertTrue(msg.equals(lp.getResetPasswordMsg()));
     }
 
 }

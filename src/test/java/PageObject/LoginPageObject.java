@@ -17,7 +17,7 @@ public class LoginPageObject {
 	By loginButton = By.xpath("//button[@type='submit']");
 	By warning = By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']");
 	By logo = By.xpath("//img[@alt='company-branding']");
-	By forgetPassword = By.xpath("/button[contains(text(),'Forgot your password')]");
+	By forgetPassword = By.cssSelector(".orangehrm-login-forgot");
 	By resetPasswordButton = By.xpath("//button[@type='submit']");
 	By resetPasswordMsg = By.cssSelector(".orangehrm-card-container p:nth-child(1)");
 	

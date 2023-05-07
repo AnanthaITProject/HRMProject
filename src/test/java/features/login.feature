@@ -1,5 +1,6 @@
 Feature: Test Login Page Functions
 
+@SmokeTest
 Scenario Outline: Validate multiple login data
 Given User is on OrangeHRM login page
 When User enter <Username> and <Password>
@@ -12,10 +13,12 @@ Examples:
 |Admin|admin123Wrong|Invalid credentials|
 |AdminWrong|admin123Wrong|Invalid credentials|
 
+@SmokeTest
 Scenario: Validate display of HRM logo
 Given User is on OrangeHRM login page
 Then Validate HRM Logo is displayed
 
+@SmokeTest
 Scenario: Validate Forgot your password function
 Given User is on OrangeHRM login page
 When Click on find your password button and input "Admin"

@@ -6,13 +6,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/java/features", glue = { "stepDefinations",
-		"Hooks" }, monochrome = true, plugin = { "html:target/cucumber.html",
+		"Hooks" }, monochrome = true, tags = "@SmokeTest", plugin = { "html:target/cucumber.html",
 				"json:target/cucmber-report.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed_scenario.txt" })
 
-public class LoginTestRunner extends AbstractTestNGCucumberTests {
-	
+public class TestLoginRunner extends AbstractTestNGCucumberTests {
+
 //	@Override
 //	@DataProvider(parallel = true)
 //	public Object[][] scenarios(){
